@@ -1,13 +1,85 @@
 <html>
     <head>
         <title>Blog</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 
+        <link rel="stylesheet" type="text/css" href="style/stylebootstrap4.css"></style>       
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         
+        <script src="javascript/header.js"></script>
     </head>
     <body>
+            <nav class="navbar navbar-expand-md fixed-top navbar-dark" id="header" role="navigation">
+                    <div class="container-fluid navbar-container" id="header-container"> 
+                        <a class=" navbar-brand" href="main.html">
+                                <img src="images/LogoImgOnly.svg" alt="Boat" width="30" height="30">
+                        </a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                                <span class="navbar-toggler-icon"></span>
+                        </button>    
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item py-xs-5"><a class="btn btn-link" href="main.html">Home</a></li>
+                            <li class="nav-item py-xs-5"><a class="btn btn-link" href="#blog">blog</a></li>
+                        </ul>
+                    </div>
+                </div>
+                </nav>
+                
+                <section id="blog" class="blog">
+                        <h2 class="font-weight-bold">Christmass</h2>
+                        <h5 id="SubText">Christmass is here with our tematic menu</h5>
 
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <img id="imgBlog" src="images/20190328_185210 (3).jpg" width="100%" style="border-radius: 50%; border: 5px solid rgba(221, 221, 221, 0.404);">
+                            </div>
+                            <div class="col-sm-8">
+                                <h2>Grilled Chicken Steak</h2>
+                                <h4 id="SubText">Special christmass meal for everybody. 
+                                    You can eat it, you can take a pricture with it and forget about it. What else you wanna know about grilled chicken steak. 
+                                    That it comes with baked potato chips? Yes it it, even with two extra dips and coleslaw salad as bonus!</h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div style="text-align: right;" class="col-sm-8">
+                                    <h2>Smoked Pork Rib</h2>
+                                    <h4 id="SubText">Special christmass meal for everybody. 
+                                            You can eat it, you can take a pricture with it and forget about it. What else you wanna know about grilled Smoked pork ribs? 
+                                            That it comes with baked potato chips? Yes it it, even with coleslaw salad and two extra dips one is creamy with garlic 
+                                            and second one is BBQ sauce.</h4>
+                                </div>
+                                <div class="col-sm-4">
+                                    <img id="imgBlog" src="images/20190331_142401 (3).jpg" width="100%" style="border-radius: 50%; border: 5px solid rgba(221, 221, 221, 0.404);">
+                                </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-sm-4">
+                                    <img id="imgBlog" src="images/20190325_103501 (3).jpg" width="100%" style="border-radius: 50%; border: 5px solid rgba(221, 221, 221, 0.404);">
+                                </div>
+                                <div class="col-sm-8">
+                                    <h2>Smoked Pork Rib and knee combo</h2>
+                                    <h4 id="SubText">Special christmass meal for everybody. 
+                                            You can eat it, you can take a pricture with it and forget about it. What else you wanna know about grilled Smoked pork ribs, knee? 
+                                            That it comes with baked potato chips? Yes it it, even with four extra dips and coleslaw, and many more.</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <footer>
+                        <div id="Copyright">
+                            <p>© Copyright 2019 Lukáš Moravec</p>
+                            <button style="padding: 0;"><img src="/images/twitter.svg" style="height: 45%;"></button>
+                            <button style="padding: 0;"><img src="/images/facebook.svg" style="height: 100%;"></button>
+                            <button style="padding: 0;"><img src="/images/pinterest.svg" style="height: 85%;"></button>
+                            <button style="padding: 0;"><img src="/images/g+.svg" style="height: 50%;"></button>               
+                        </div>
+                    </footer> 
     </body>
 </html>

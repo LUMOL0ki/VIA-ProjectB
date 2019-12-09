@@ -1,0 +1,246 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+}
+
+#SubText{
+    color: rgba(167, 167, 167, 0.801);
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: initial;
+}
+
+#gallery{
+    text-align: center;
+    padding-top: 60px;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery-Show{
+    padding-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+}
+
+.row .btn{
+    background-color: rgb(255, 202, 55);
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+}
+
+.row .btn:hover{
+    background-color: rgba(255, 202, 55, 0.8);
+}
+
+.row .btn:focus{
+    border: none;   
+}
+
+.navbar {
+    border: none;
+    background-color: rgba(0, 0, 0, 0.90);
+    z-index: 100;
+    transition: background-color 1s ease 0s;
+}
+
+.navbar-container{
+    padding: 0px;
+}
+
+.navbar .active a, .nav a:focus {
+	color:rgb(255, 202, 55, 0.8) !important;
+	background-color: transparent !important;
+}
+
+.navbar-brand{
+    padding: 55px;
+}
+
+.nav.navbar-nav.ml-auto li a {
+    text-transform: uppercase;
+    text-decoration: none !important;
+    color: white;
+    bottom: none;
+}
+
+.nav.navbar-nav.ml-auto li .btn:hover {
+    text-decoration: none !important;
+    color: rgb(172, 172, 172);
+    bottom: none;
+}
+
+#Copyright{
+    height: 10vh;
+    text-align: center;
+}
+
+#Copyright p{
+    padding-top: 4vh;
+    margin-left: 10px;
+    text-align: left;
+    display: inline-block;
+}
+
+#Copyright button{
+    text-align: center;
+    border: none;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 3vh;
+}
+
+#Copyright button:hover{
+    background-color: rgb(56, 56, 56);
+}
+
+.specialDeal{
+    
+    width: 100%;
+    height: auto;
+    background-image: url("..//images/20190331_142444 (2).jpg");
+    
+    color: white;
+    text-align: center;
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.specialDeal h1{
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.specialDeal h3{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.specialDeal #Content{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 20vh;
+    height: 100%;
+}
+
+.about{
+    list-style: none;
+    
+}
+
+.blog{
+    text-transform: uppercase;
+    text-align: center;
+    height: auto;
+    background-color: rgb(248, 248, 248);
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+   
+.blog .row{
+    padding-top: 30px;
+}
+
+.blog h2{
+    padding-top: 30px;
+}
+
+.blog h4{
+    padding-bottom: 30px;
+}
+
+.blog #subtext{
+    font-style: normal;
+}
+
+.blog .container{
+    height: auto;
+    margin-top: 50px;
+    text-align: left;
+}
+
+#imgBlog{
+    object-fit: contain;
+
+}
+
+@media (min-width: 1000px) {
+    .specialDeal{
+        height: 90vh;
+    }
+
+#gallery{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5px;
+    height: auto;
+}
+
+#copyright {
+    text-align: center;
+    margin-left: -320px;
+    display: list-item;
+}
+
+#copyright p{
+    padding-right: 100px;
+}
+
+.navbar {
+    height: auto;
+    border: none;
+    color: white;
+    z-index: 100;
+    transition: background-color 1s ease 0s;
+}
+
+.nav.navbar-nav.ml-auto li .btn{
+    text-transform: uppercase;
+    font-size: 13pt !important;
+    color: white;
+}
+
+.nav.navbar-nav.ml-auto li .btn:hover {
+    text-transform: uppercase;
+    /*border-bottom: 3px solid white;*/
+    color: rgb(172, 172, 172);
+}
+
+.navbar ul li { 
+	color: #FFF !important;
+	font-size: 13pt !important;
+}
+
+.navbar-nav a:hover, .navbar-nav a:hover::before, .navbar-nav a:hover::after, .navbar-nav a:focus::before, .navbar-nav a:focus::after {
+	color:rgb(255, 202, 55) !important;
+	background-color: transparent !important;	
+	opacity: 1;
+	-webkit-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	transform: translateX(0px);
+}
+
+.blog{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+}

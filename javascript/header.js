@@ -1,5 +1,21 @@
 $(document).ready(function(){
+    
+    //NavBar anim
     $("ul.nav li a[href^='#']").click(function(){
+        $("html, body").stop().animate({
+            scrollTop: $($(this).attr("href")).offset().top
+        }, 400);
+    });
+
+    //Logo anim
+    $("a.nav[href^='#']").click(function(){
+        $("html, body").stop().animate({
+            scrollTop: $($(this).attr("href")).offset().top
+        }, 400);
+    });
+
+    //About us Button anim
+    $("ul.about li a[href^='#']").click(function(){
         $("html, body").stop().animate({
             scrollTop: $($(this).attr("href")).offset().top
         }, 400);
@@ -45,8 +61,7 @@ $(document).ready(function(){
      */
     myNavBar.init(  [
         "header",
-        "header-container",
-        "brand"
+        "header-container"
     ]);
     
     /**

@@ -2,11 +2,25 @@
 
 html, body {
     height: 100%;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
 }
 
 #SubText{
-    color: rgba(167, 167, 167, 0.7);
+    color: rgba(167, 167, 167, 0.801);
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: initial;
+}
+
+.card-body #SubText{
+    font-style: normal;
+    font-size: 12px;
+}
+
+.about{
+    list-style: none;
+    
 }
 
 #Home{
@@ -28,14 +42,22 @@ html, body {
     height: 100vh;
 }
 
+#Home h3{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30;
+}
+
 #Home h1{
     text-transform: uppercase;
     font-size: 50px;
     padding: 20px;
 }
 
-#Home button{
+.btn{
     background-color: rgb(255, 202, 55);
+    outline-color: rgb(255, 202, 55);
+    color: white;
     padding: 15px;
     padding-left: 35px;
     padding-right: 35px;
@@ -43,39 +65,89 @@ html, body {
     border: none;
 }
 
-#Home button:hover{
+.btn:hover{
     background-color: rgba(255, 202, 55, 0.8);
 }
 
-#Home button:focus{
-    border: none;
+.btn:focus{
+    border: none;    
+    outline-color: rgb(255, 202, 55);
+}
+
+.btn:active{
+    outline-color: rgb(255, 202, 55);
 }
 
 #Services{
     padding: 10vh;
-    height: 100vh;
+    height: auto;
     text-align: center;
     text-transform: uppercase;
+}
+
+#Services .card{
+    border: 0px;
+    text-transform: initial;
+}
+
+#Services .card img{
+    border-radius: 50%; 
+    margin-bottom: 15px;
+}
+
+#Services .card-title{
+    font-weight: bold;
 }
 
 #Blog{
     background-color: rgb(248, 248, 248);
-    padding: 10vh;
-    height: 100vh;
+    padding: 4vh;
+    height: auto;
     text-align: center;
     text-transform: uppercase;
+}
+
+#Blog .card{
+    border: 0px;
+    margin-top: 50px;
+    text-transform: initial;
+}
+
+#Blog .card-title{
+    font-weight: bold;
+}
+
+#Blog .btn{
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #About{
     padding: 5vh;
-    height: 100vh;
+    height: auto;
     text-align: center;
     text-transform: uppercase;
 }
 
+#About .container h5{
+    font-weight: bold;
+}
+
+#About .container .row{
+    margin-top: 70px;
+}
+
 #About p{
-    padding-top: 20px;
+    padding-top: 50px;
     text-align: justify;
+}
+
+#right{
+    text-align: right;
+}
+
+#left{
+    text-align: left;
 }
 
 #Contact{
@@ -84,14 +156,14 @@ html, body {
     color: white;
     text-align: center;
     text-transform: uppercase;
-    height: 90vh;
+    height: auto;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #Contact textarea{
-    height: 105px;
     resize: none;
 }
-
 #Contact input, textarea{
     margin-top: 30px;
     text-transform: uppercase;
@@ -112,17 +184,37 @@ html, body {
     background-color: rgba(255, 202, 55, 0.8);
 }
 
+#Contact textarea{
+    height: 85%;
+    min-height: 162px;
+}
+
 #Copyright{
     height: 10vh;
+    text-align: center;
 }
 
 #Copyright p{
     padding-top: 4vh;
-    padding-left: 15%;
+    margin-left: 10px;
+    text-align: left;
+    display: inline-block;
 }
 
-footer{
-    height: 100px;
+#Copyright button{
+    text-align: center;
+    border: none;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 3vh;
+    
+}
+
+#Copyright button:hover{
+    background-color: rgb(56, 56, 56);
 }
 
 .navbar {
@@ -130,6 +222,10 @@ footer{
     background-color: rgba(0, 0, 0, 0.90);
     z-index: 100;
     transition: background-color 1s ease 0s;
+}
+
+.navbar-container{
+    padding: 0px;
 }
 
 .navbar .active a, .nav a:focus {
@@ -153,28 +249,69 @@ footer{
     bottom: none;
 }
 
+@media (max-width: 575px) {
+    #right{
+        text-align: center;
+    }
+    
+    #left{
+        text-align: center;
+    }
+}
+
 @media (min-width: 1000px) {
 
+    #Services{
+        /*height: 100vh;*/
+        padding-left: 230px;
+        padding-right: 230px;
+
+    }
+
+    #Services .card{
+        padding-top: 50px;
+    }
+
     #Contact{
+        height: 90vh;
         padding-left: 230px;
         padding-right: 230px;
     }
- 
-#Contact input, textarea{
-    padding: 25px;
-}
 
-#Contact textarea{
-    height: 215px;
+#Blog{
+    height: auto;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 100px;
 }
 
 #About{
     padding: 10vh;
 }
 
+#About img{
+    height: 160px;
+    width: 160px;
+}
+
 #About p{
     margin-left: 15%;
     margin-right: 15%;
+}
+
+#about .container{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#copyright {
+    text-align: center;
+    margin-left: -320px;
+    display: list-item;
+}
+
+#copyright p{
+    padding-right: 100px;
 }
 
 .navbar {
@@ -195,7 +332,7 @@ footer{
 
 .navbar-container li a:hover {
     text-transform: uppercase;
-    border-bottom: 3px solid white;
+    /*border-bottom: 3px solid white;*/
     color: rgb(172, 172, 172);
 }
 
@@ -249,7 +386,7 @@ footer{
 
 
 
-/* Menu - Animação */
+/* Animacion */
 .navbar-nav a::before, .navbar-nav a::after {
 	display: inline-block;
 	opacity: 0;

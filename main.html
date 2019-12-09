@@ -4,35 +4,34 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        
         <link rel="stylesheet" type="text/css" href="style/style.css"></style>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
         <script src="javascript/header.js"></script>
     </head>
 
     <body data-spy="scroll" data-offset="0" data-target="#header">
         <header>
-                <nav class="navbar navbar-default navbar-fixed-top" id="header" role="navigation">
-                    <div class="container-fluid navbar-container" id="header-container">                        
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                            </button>
-                            <a class="navbar-brand" href="#Home">
-                                <img src="images/LogoImgOnly.svg" alt="Boat" style="height: 100%;">
+                <nav class="navbar navbar-expand-md navbar-fixed-top navbar-dark" id="header" role="navigation">
+                    <div class="container-fluid navbar-container" id="header-container"> 
+                            <a class=" navbar-brand" href="#Home">
+                                    <img src="images/LogoImgOnly.svg" alt="Boat" style="height: 100%;">
                             </a>
-                        </div>
-            
-                        <div class="collapse navbar-collapse" id="navbar">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                                    <span class="navbar-toggler-icon"></span>
+                            </button>    
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
                             <ul class="nav navbar-nav navbar-right">
-                                <li class="active"><a href="#Home">Home</a></li>
-                                <li><a href="#Services">Services</a></li>
-                                <li><a href="#Blog">Blog</a></li>
-                                <li><a href="#About">About us</a></li>
-                                <li><a href="#Contact">Contact</a></li>
+                                <li class="nav-item active"><a href="#Home">Home</a></li>
+                                <li class="nav-item"><a href="#Services">Services</a></li>
+                                <li class="nav-item"><a href="#Blog">Blog</a></li>
+                                <li class="nav-item"><a href="#About">About us</a></li>
+                                <li class="nav-item"><a href="#Contact">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -42,87 +41,143 @@
         <div>
         <section id="Home">
             <div id="HomeContent">
-                    <h3>Welcome to our restaurant</h3>
-                    <h1 class="display-1">Pristav</h1>
-                    <button class="btn btn-primary ">About us</button>
+                    <ul class="about">
+                        <li><h3>Welcome to our restaurant</h3></li>
+                        <li><h1 class="display-1">Pristav</h1></li>
+                        <li><a role="button" class="btn btn-default " href="#About">About us</a></li>
+                    </ul> 
             </div>
         </section>
 
         <section id="Services">
-            <h1>Services</h1>
-            <h4 id="SubText">Lorem ipsum</h4>
+            <h2 class="font-weight-bold">Services</h2>
+            <h5 id="SubText">What do we offer</h5>
+            
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/main(3).jpg" width="60px">
+                        <h5 class="card-title">Weddings</h5>
+                        <p id="subtext" class="card-text">We offer wedding reception. With organizations and theme design  of whole restaurant. </p>
+                    </div>
+                </div>
+                <div class="card">
+                        <div class="card-body">
+                            <img src="images/20190331_142401 (3).jpg" width="60px">
+                            <h5 class="card-title">Birthdays</h5>
+                            <p id="subtext" class="card-text">You can also celebrate your birthday here. We have place for up to 80 hosts. Preparations and theme design arre on us.</p>
+                        </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <img src="images/20190331_142401 (3).jpg" width="60px">
+                        <h5 class="card-title">Business party</h5>
+                        <p id="subtext" class="card-text">Or you can organize your business party to cemented relationships with your employees.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="Blog">
-            <h1>Block</h1>
-            <h4 id="SubText">Lorem ipsum</h4>
+            <h2 class="font-weight-bold">Blog</h2>
+            <h5 id="SubText">News and deals</h5>
+            <div class="card-deck">
+            
+            <div class="card">
+                    <a href="specialDeal.html"><img src="images/20190331_142444 (2).jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <h5 class="card-title">Limited time deal</h5>
+                    <p id="SubText" style="font-style: italic;" class="card-text">Don't miss our sweet deal a get in time.</p>    
+                    <!-- <a href="specialDeal.html" class="btn btn-default">Show more</a>            -->
+                </div>
+            </div>
 
             <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                <div class="card-body" style="width: 18rem;">
-                    <h5 class="card-title">Limited time deal</h5>
-                    <p class="card-text">Don't miss our sweet deal a get in time.</p>                
-                </div>
-            </div>
-            
-            <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                <div class="card-body" style="width: 18rem;">
+                    <a href="gallery.html"><img src="images/main.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
                     <h5 class="card-title">Gallery</h5>
-                    <p class="card-text">Have a look at our gallery.</p>                
+                    <p id="SubText" style="font-style: italic;" class="card-text">Have a look at our gallery.</p>                
+                    <!--<a href="gallery.html" class="btn btn-default">Show more</a>            -->
                 </div>
             </div>
             
             <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                <div class="card-body" style="width: 18rem;">
+                    <a href="blog.html"><img src="images/20190331_145944 (2).jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
                     <h5 class="card-title">Christmass</h5>
-                    <p class="card-text">Christmass is here with our tematic menu.</p>                
+                    <p id="SubText" style="font-style: italic;" class="card-text">Christmass is here with our tematic menu.</p>         
+                    <!--<a href="blog.html" class="btn btn-default">Show more</a>                   -->
                 </div>
+            </div>
             </div>
         </section>
 
         <section id="About">
-            <h1>About us</h1>
-            <h4 id="SubText">Lorem ipsum</h4>
-            <p>
-                    We invite you to the pleasant environment of the PORT restaurant stylized in the maritime theme.
+            <h2 class="font-weight-bold">About us</h2>
+            <h5 id="SubText">And our restaurant</h5>
 
-                    Come and taste our specialty smoked pork knuckle or other great dishes that we will be happy to prepare.
-                    
-                    Restaurant PORT organizes social events:
-                    - family celebrations
-                    - corporate parties
-                    - funeral feasts
-                    - the restaurant can seat up to 80 people
-                    
-                    We can not only close the restaurant for you, but we always adapt the opening hours to your wishes.
-                    
-                    And why just organize social events with us? It is not only great meals that we will prepare, but also the availability of the restaurant. You can reach us by train, bus or car.
-                    
-                    - Havířov train station is located near the restaurant.
-                    - about 100m from the restaurant is a bus stop. You can use both public transport Havířov and Ostrava connections. Name of bus stop: Šumbark, bazén
-                    - and of course there is parking
-            </p>
+            <div class="container">
+                <div class="row">
+                    <div id="right" class="col-sm">
+                        <div>
+                            <h5>JULY 2010</h5>
+                            <h5 style="text-transform:none">We opened</h5>
+                            <div id="subtext" style="font-style: normal;">July 2010 we openned our restaurant and started our buseness.</div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/main(3).jpg" width="160px"style="border-radius: 50%; border: 5px solid rgba(221, 221, 221, 0.404);">
+                    </div>
+                    <div class="col-sm">
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/20190331_142401 (3).jpg" width="160px" style="border-radius: 50%; border: 5px solid rgba(221, 221, 221, 0.404);">
+                    </div>
+                    <div id="left" class="col-sm">
+                            <h5>JANUARY 2011</h5>
+                            <h5 style="text-transform:none">Homemade products</h5>
+                            <div id="subtext" style="font-style: normal;">We started doing out homemade smoked meats, such as smoked pork knee, smoked robs, and smoked chicken wings.</div> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="right" class="col-sm">
+                            <h5>December 2012</h5>
+                            <h5 style="text-transform:none">Delivery</h5>
+                            <div id="subtext" style="font-style: normal;">We can now deliver to your home.</div>
+                    </div>
+                    <div class="col-sm">
+                        <img src="images/20190325_103501 (3).jpg" width="160px" style="border-radius: 50%; border: 5px solid rgba(221, 221, 221, 0.404);">
+                    </div>
+                    <div class="col-sm">
+                        
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="Contact">
-            <h1>Contact us</h1>
-            <h4 id="SubText">Lorem ipsum</h4>
+            <h2 class="font-weight-bold">Contact us</h2>
+            <h5 id="SubText">So we can reslove your problem</h5>
 
             <form>
                 <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <input type="text" class="form-control" placeholder="your name">
-                        <input type="text" class="form-control" placeholder="your e-mail">
-                        <input type="text" class="form-control" placeholder="subject">
+                    <div class="form-group col-sm">
+                        <div class="short-div"><input type="text" class="form-control" placeholder="your name" required></div>
+                        <div class="short-div"><input type="email" class="form-control" placeholder="your e-mail" required></div>
+                        <div class="short-div"><input type="text" class="form-control" placeholder="subject" required></div>
                     </div>
-                    <div class="form-group col-md-6">
-                        <textarea class="form-control" placeholder="your message"></textarea>
+                    <div class="form-group col-sm">
+                        <textarea class="form-control" placeholder="your message" required></textarea>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-12">
-                        <button class="btn btn-primary">Send message</button>
+                        <button class="btn btn-default" type="submit">Send message</button>
                     </div>
                 </div>
             </form>
@@ -131,7 +186,11 @@
         </div>
         <footer>
             <div id="Copyright">
-                <p>© Copyright 2019 Lukáš Moravec</p>
+                <p>© Copyright 2019 Lukáš Moravec Student project</p>
+                <button style="padding: 0;"><img src="/images/twitter.svg" style="height: 45%;"></button>
+                <button style="padding: 0;"><img src="/images/facebook.svg" style="height: 100%;"></button>
+                <button style="padding: 0;"><img src="/images/pinterest.svg" style="height: 85%;"></button>
+                <button style="padding: 0;"><img src="/images/g+.svg" style="height: 50%;"></button>               
             </div>
         </footer> 
     </body>
